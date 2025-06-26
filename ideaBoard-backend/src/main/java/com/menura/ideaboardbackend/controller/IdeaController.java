@@ -4,7 +4,6 @@ import com.menura.ideaboardbackend.model.Idea;
 import com.menura.ideaboardbackend.service.IdeaService;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
