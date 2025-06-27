@@ -1,8 +1,7 @@
 // Real API calls to match your Spring Boot backend
-const API_BASE_URL = "http://localhost:8080/api/ideas" // Update with your backend URL
+const API_BASE_URL = "http://localhost:8080/api/ideas" 
 
 export const ideaApi = {
-  // Get all ideas (ordered by createdAt desc from backend)
   getAllIdeas: async () => {
     const response = await fetch(`${API_BASE_URL}`)
     if (!response.ok) {
