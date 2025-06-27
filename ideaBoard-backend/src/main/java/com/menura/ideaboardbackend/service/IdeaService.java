@@ -4,6 +4,7 @@ import com.menura.ideaboardbackend.model.Idea;
 import com.menura.ideaboardbackend.repository.IdeaRepository;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
@@ -28,6 +29,7 @@ public class IdeaService {
                 .orElseThrow(() -> new RuntimeException("Idea not found"));
         extintIdea.setTitle(updateIdea.getTitle());
         extintIdea.setDescription(updateIdea.getDescription());
+        extintIdea.setCreatedAt(LocalDateTime.now());
         return  ideaRepository.save(extintIdea);
     }
 

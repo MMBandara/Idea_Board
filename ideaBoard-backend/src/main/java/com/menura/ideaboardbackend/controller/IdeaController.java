@@ -10,6 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/ideas")
+@CrossOrigin(origins = "*")
 public class IdeaController {
     private final IdeaService ideaService;
 

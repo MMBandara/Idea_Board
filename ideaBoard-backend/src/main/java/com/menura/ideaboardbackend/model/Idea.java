@@ -1,9 +1,6 @@
 package com.menura.ideaboardbackend.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 
 import java.time.LocalDateTime;
@@ -20,6 +17,7 @@ public class Idea {
     @NotBlank
     private String description;
 
+    @Column(name = "created_at")
     private LocalDateTime createdAt;
 
     public Idea() {
@@ -47,6 +45,7 @@ public class Idea {
     public LocalDateTime getCreatedAt() {
         return createdAt;
     }
+
 
     public void setId(Long id) {
         this.id = id;
