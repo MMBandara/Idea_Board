@@ -40,7 +40,10 @@ This project is a full-stack web application built with **React (frontend)** and
 - Spring Boot
 - Spring Web
 - Spring Data JPA
-- H2 In-Memory Database
+
+### 🔹 Database:
+This project uses the **H2 in-memory database** for simplicity and ease of setup. It resets on application restart, making it ideal for demonstration purposes.
+
 
 ---
 
